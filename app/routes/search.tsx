@@ -29,6 +29,8 @@ export default function Search() {
     motor: "",
   });
 
+  const [sortBy, setSortBy] = useState("relevance");
+
   const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFilters({ ...filters, [e.target.name]: e.target.value });
   };
@@ -43,10 +45,15 @@ export default function Search() {
       transmission: "",
       motor: "",
     });
+    setSortBy("relevance");
+  };
+
+  const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSortBy(e.target.value);
   };
 
   const filteredCars = useMemo(() => {
-    return (carsData as any[]).filter((c) => {
+    const results = (carsData as any[]).filter((c) => {
       const q = filters.q.trim().toLowerCase();
       if (q) {
         const combined = `${c.make} ${c.model}`.toLowerCase();
@@ -74,7 +81,20 @@ export default function Search() {
 
       return true;
     });
-  }, [filters]);
+
+    const sorted = results.slice();
+    if (sortBy === "price-asc") {
+      sorted.sort((a, b) => a.pricePerDay - b.pricePerDay);
+    } else if (sortBy === "price-desc") {
+      sorted.sort((a, b) => b.pricePerDay - a.pricePerDay);
+    } else if (sortBy === "asc") {
+      sorted.sort((a, b) => a.make.localeCompare(b.make));
+    } else if (sortBy === "desc") {
+      sorted.sort((a, b) => b.make.localeCompare(a.make));
+    }
+
+    return sorted;
+  }, [filters, sortBy]);
 
   return (
     <main>
@@ -178,6 +198,16 @@ export default function Search() {
 
             {/* Résultats à droite */}
             <div className="results-column">
+              <div className="sort-bar">
+                <span>Trier par :</span>
+                <select value={sortBy} onChange={handleSortChange}>
+                  <option value="relevance">Pertinence</option>
+                  <option value="price-asc">Prix croissant</option>
+                  <option value="price-desc">Prix décroissant</option>
+                  <option value="asc">Ordre croissant</option>
+                  <option value="desc">Ordre décroissant</option>
+                </select>
+              </div>
               <div className="search-results">
                 <p className="results-count">{filteredCars.length} véhicules disponibles</p>
 
