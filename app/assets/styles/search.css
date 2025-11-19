@@ -1,3 +1,46 @@
+/* === LAYOUT À GAUCHE / DROITE === */
+.search-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Colonne filtres (scroll + sticky) */
+.filters-column {
+  position: sticky;
+  top: 100px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  padding-right: 6px; /* pour éviter que la scrollbar touche le contenu */
+}
+
+/* Scrollbar stylée (optionnel mais beau) */
+.filters-column::-webkit-scrollbar {
+  width: 6px;
+}
+.filters-column::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+.filters-column::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* La barre des filtres en colonne */
+.filter-bar {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+/* === STYLE GLOBAL === */
 .search-page {
   min-height: calc(100vh - 200px);
   background: #f8f9fa;
@@ -16,18 +59,8 @@
   text-align: center;
 }
 
-.filter-bar {
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  align-items: end;
-}
 
+/* === FILTRES === */
 .filter-group {
   display: flex;
   flex-direction: column;
@@ -58,8 +91,8 @@
 
 .filter-actions {
   display: flex;
-  gap: 1rem;
-  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .btn-search,
@@ -94,32 +127,10 @@
   background: #dee2e6;
 }
 
+
+/* === RÉSULTATS === */
 .search-results {
-  margin-top: 2rem;
-}
-
-.search-group label,
-.filter-group label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #111827;
-  margin-bottom: 0.35rem;
-  display: block;
-}
-
-.search-input-wrap {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.search-input-wrap input[type="search"]{
-  flex: 1;
-  padding: 0.6rem 0.8rem;
-  border-radius: 8px;
-  border: 1px solid #e6e9ef;
-  font-size: 0.95rem;
-  background: #fff;
+  margin-top: 0;
 }
 
 .results-count {
@@ -134,6 +145,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
+
 .offer-card {
   background: white;
   border-radius: 15px;
@@ -143,10 +155,12 @@
   cursor: pointer;
   position: relative;
 }
+
 .offer-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
 .offer-badge {
   position: absolute;
   top: 1rem;
@@ -158,6 +172,7 @@
   font-weight: 600;
   font-size: 0.9rem;
 }
+
 .offer-image {
   width: 100%;
   height: 200px;
@@ -179,24 +194,28 @@
 .offer-content {
   padding: 1.5rem;
 }
+
 .offer-content h3 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: #333;
 }
+
 .offer-category {
   color: #666;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
+
 .offer-features {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
   margin-bottom: 1rem;
   color: #666;
   font-size: 0.9rem;
-  flex-wrap: wrap;
 }
+
 .offer-price-section {
   display: flex;
   justify-content: space-between;
@@ -205,16 +224,19 @@
   padding-top: 1rem;
   border-top: 1px solid #eee;
 }
+
 .offer-price {
   font-size: 1.8rem;
   font-weight: bold;
   color: #667eea;
 }
+
 .offer-price span {
   font-size: 1rem;
   font-weight: normal;
   color: #666;
 }
+
 .offer-btn {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -225,26 +247,42 @@
   font-weight: 600;
   transition: transform 0.3s;
 }
+
 .offer-btn:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .container {
-    margin: 0;
-  }
-  .filter-bar {
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .search-layout {
     grid-template-columns: 1fr;
+  }
+
+  .filters-column {
+    position: static;
+    max-height: none;
+    overflow: visible;
   }
 
   .filter-actions {
     flex-direction: column;
-    width: 100%;
+    gap: 1rem;
   }
 
   .btn-search,
   .btn-reset {
     width: 100%;
     justify-content: center;
+  }
+
+  .container {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .offers-grid {
+    grid-template-columns: 1fr;
   }
 }

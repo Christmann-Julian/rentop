@@ -49,11 +49,11 @@ export default function Home() {
                 </div>
                 <div className="offer-content">
                   <h3>Peugeot 208</h3>
-                  <div className="offer-category">Citadine • 2023</div>
+                  <div className="offer-category">Citadine</div>
                   <div className="offer-features">
-                    <span>👤 5 places</span>
-                    <span>⚙️ Manuelle</span>
-                    <span>❄️ Clim</span>
+                    <span><i className="fas fa-users"></i> 5 places</span>
+                    <span><i className="fas fa-cog"></i> Manuelle</span>
+                    <span><i className="fas fa-gas-pump"></i> Diesel</span>
                   </div>
                   <div className="offer-price-section">
                     <div className="offer-price">40€<span>/jour</span></div>
@@ -69,11 +69,11 @@ export default function Home() {
                 </div>
                 <div className="offer-content">
                   <h3>Renault Captur</h3>
-                  <div className="offer-category">SUV Compact • 2024</div>
+                  <div className="offer-category">SUV Compact</div>
                   <div className="offer-features">
-                    <span>👤 5 places</span>
-                    <span>⚙️ Auto</span>
-                    <span>📱 GPS</span>
+                    <span><i className="fas fa-users"></i> 5 places</span>
+                    <span><i className="fas fa-cog"></i> Auto</span>
+                    <span><i className="fas fa-gas-pump"></i> Essence</span>
                   </div>
                   <div className="offer-price-section">
                     <div className="offer-price">55€<span>/jour</span></div>
@@ -89,11 +89,11 @@ export default function Home() {
                 </div>
                 <div className="offer-content">
                   <h3>Tesla Model 3</h3>
-                  <div className="offer-category">Électrique • 2024</div>
+                  <div className="offer-category">Électrique</div>
                   <div className="offer-features">
-                    <span>👤 5 places</span>
-                    <span>⚡ Électrique</span>
-                    <span>🚀 Sport</span>
+                    <span><i className="fas fa-users"></i> 5 places</span>
+                    <span><i className="fas fa-cog"></i> Auto</span>
+                    <span><i className="fas fa-gas-pump"></i> Électrique</span>
                   </div>
                   <div className="offer-price-section">
                     <div className="offer-price">120€<span>/jour</span></div>
