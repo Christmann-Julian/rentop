@@ -6,8 +6,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
 import type { Route } from "./+types/root";
+import "./assets/styles/ui/navbar.css";
+import "./assets/styles/ui/footer.css";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
