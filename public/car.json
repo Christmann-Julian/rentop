@@ -218,7 +218,7 @@
     "pricePerDay": 30,
     "description": "La Seat Ibiza est une citadine dynamique et stylée, offrant une conduite agile, un design moderne et des fonctionnalités pratiques pour les trajets urbains quotidiens.",
     "phone": "09 87 65 43 21",
-    "image": "#"
+    "image": "https://sf1.autojournal.fr/wp-content/uploads/autojournal/2024/09/3-19.jpg"
   },
   {
     "id": 18,
@@ -231,7 +231,7 @@
     "pricePerDay": 68,
     "description": "Le Mazda CX-5 est un SUV élégant et performant, offrant un design sophistiqué, un confort supérieur et des technologies avancées pour une expérience de conduite agréable en toutes circonstances.",
     "phone": "03 21 09 87 65",
-    "image": "#"
+    "image": "https://www.latribuneauto.com/media/cache/resolve/vehicule_slider/photos/MAZDA/CX-5/MAZD-CX5-TT-22-120065/02%20Mazda%20CX-60%202022%20Exterieur%203%204%20Avant.jpg"
   },
   {
     "id": 19,
@@ -244,7 +244,7 @@
     "pricePerDay": 42,
     "description": "La Honda Civic est une berline compacte et fiable, offrant une conduite dynamique, un design moderne et des technologies avancées pour une expérience de conduite agréable au quotidien.",
     "phone": "06 78 90 12 34",
-    "image": "#"
+    "image": "https://images.caradisiac.com/logos/8/4/8/2/278482/S0-vous-pouvez-a-nouveau-commander-une-honda-civic-203980.jpg"
   },
   {
     "id": 20,
@@ -257,7 +257,7 @@
     "pricePerDay": 52,
     "description": "La Mini Cooper est une citadine emblématique, offrant un design unique, une conduite sportive et une technologie moderne pour une expérience de conduite urbaine amusante et stylée.",
     "phone": "05 67 89 01 23",
-    "image": "#"
+    "image": "https://www.autoscout24.fr/cms-content-assets/39uFR5x2FtrjRfr7Ex8LVU-4276b81d2f21b3fd2621eca622e0dcfe-mini-cooper-s-l-01-1100.jpg"
   },
   {
     "id": 21,
@@ -270,7 +270,7 @@
     "pricePerDay": 88,
     "description": "Le Volvo XC40 est un SUV compact de luxe, offrant un design scandinave élégant, un confort supérieur et des technologies de sécurité avancées pour une expérience de conduite raffinée et sûre.",
     "phone": "07 89 01 23 45",
-    "image": "#"
+    "image": "https://images.caradisiac.com/logos/2/8/0/6/272806/S8-essai-volvo-xc40-recharge-231-ch-2022-que-vaut-l-entree-de-gamme-electrique-suedoise-197500.jpg"
   },
   {
     "id": 22,
@@ -283,7 +283,7 @@
     "pricePerDay": 50,
     "description": "La Renault Zoe est une citadine électrique compacte, offrant une autonomie pratique, un design moderne et des fonctionnalités innovantes pour une conduite urbaine écologique et agréable.",
     "phone": "08 90 12 34 56",
-    "image": "#"
+    "image": "https://www.ecoreseau.fr/wp-content/uploads/2020/02/21211458_2018_-_Renault_ZOE.jpg"
   },
   {
     "id": 23,
@@ -296,7 +296,7 @@
     "pricePerDay": 72,
     "description": "Le Peugeot 3008 est un SUV élégant et polyvalent, offrant un design audacieux, un confort supérieur et des technologies avancées pour une expérience de conduite agréable en toutes circonstances.",
     "phone": "01 23 45 67 89",
-    "image": "#"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Peugeot_e-3008_Automesse_Ludwigsburg_2024_IMG_1360.jpg"
   },
   {
     "id": 24,
@@ -309,7 +309,7 @@
     "pricePerDay": 66,
     "description": "Le Citroën C5 Aircross est un SUV spacieux et confortable, offrant une conduite douce, un design moderne et des technologies innovantes pour une expérience de conduite agréable en famille.",
     "phone": "09 87 65 43 21",
-    "image": "#"
+    "image": "https://journalauto.com/wp-content/uploads/2023/12/C5-48V.jpg"
   },
   {
     "id": 25,
@@ -322,7 +322,7 @@
     "pricePerDay": 58,
     "description": "La Toyota Corolla est une berline fiable et économique, offrant une conduite confortable, un design élégant et des technologies avancées pour une expérience de conduite agréable au quotidien.",
     "phone": "06 54 32 10 98",
-    "image": "#"
+    "image": "https://images.caradisiac.com/images/7/2/6/2/87262/S0-Voici-la-nouvelle-Toyota-Corolla-295344.jpg"
   },
   {
     "id": 26,
@@ -335,7 +335,7 @@
     "pricePerDay": 25,
     "description": "La Kia Picanto est une citadine compacte et économique, offrant une conduite agile, un design moderne et des fonctionnalités pratiques pour les trajets urbains quotidiens.",
     "phone": "07 65 43 21 09",
-    "image": "#"
+    "image": "https://www.guercoetauto.com/wp-content/uploads/2025/08/QRLZ-22192-198410.jpg"
   },
   {
     "id": 27,
@@ -348,7 +348,7 @@
     "pricePerDay": 20,
     "description": "La Dacia Sandero est une citadine abordable et pratique, offrant un bon rapport qualité-prix, un design simple et des fonctionnalités essentielles pour les trajets urbains quotidiens.",
     "phone": "04 32 10 98 76",
-    "image": "#"
+    "image": "https://vpn-autos.com/_ipx/w_512,f_webp,q_100,fit_cover/https://eveho.fra1.cdn.digitaloceanspaces.com/vehicles/6759fda0-90cd-4d9d-8834-3d2097ba114f/dms/base_2adea9858a3d30ffd8311538487e5edbaae3902.jpg"
   },
   {
     "id": 28,
@@ -361,7 +361,7 @@
     "pricePerDay": 80,
     "description": "Le Jeep Compass est un SUV robuste et polyvalent, offrant des performances tout-terrain, un design audacieux et des technologies avancées pour une expérience de conduite aventureuse.",
     "phone": "02 10 98 76 54",
-    "image": "#"
+    "image": "https://vpn-autos.com/_ipx/w_512,f_webp,q_100,fit_cover/https://eveho.fra1.cdn.digitaloceanspaces.com/vehicles/e958ce20-63cb-4f33-84f7-411b65ad40ff/dms/base_39ea7c04740edcaddcc8374f7e7e510e56ca91c.jpg"
   },
   {
     "id": 29,
@@ -374,7 +374,7 @@
     "pricePerDay": 200,
     "description": "Le Porsche Macan est un SUV de luxe alliant performance sportive, design élégant et technologies de pointe, offrant une expérience de conduite exceptionnelle pour les amateurs de voitures haut de gamme.",
     "phone": "03 21 09 87 65",
-    "image": "#"
+    "image": "https://lignonautomobiles.com/wp-content/uploads/2023/09/DSC04536-scaled-e1696405584721.jpg"
   },
   {
     "id": 30,
@@ -387,6 +387,6 @@
     "pricePerDay": 110,
     "description": "Le Lexus UX 250h est un SUV hybride de luxe, offrant un design sophistiqué, un confort supérieur et des technologies avancées pour une expérience de conduite raffinée et écologique.",
     "phone": "06 78 90 12 34",
-    "image": "#"
+    "image": "https://hips.hearstapps.com/hmg-prod/images/2024-lexus-ux-250h-premium-228-65d8a8e1bca3c.jpg?crop=0.644xw:0.542xh;0.292xw,0.408xh&resize=2048:*"
   }
 ]
